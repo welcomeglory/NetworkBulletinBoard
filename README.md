@@ -19,5 +19,8 @@ java
 ### 0. 종료
 0(종료)을 입력하면 종료가 됩니다.
 
+## 실행화면
+![image](https://github.com/welcomeglory/NetworkBulletinBoard/assets/153584777/608572d1-b18e-4d19-a519-1b29a52ecab5)
+
     
 
