@@ -24,7 +24,7 @@ public class Client {
                     case "1":
                         out.println("LIST");
                         System.out.println("[목록]");
-                        System.out.println("번호\t제목\t작성자");        
+                        System.out.println("번호\t제목\t작성자\t작성일시");        
                         String message;
                         while ((message = in.readLine()) != null && !message.isEmpty()) {
                             System.out.println(message);
