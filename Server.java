@@ -1,6 +1,9 @@
 package firstproject;
+
 import java.io.*;
 import java.net.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,7 +52,9 @@ public class Server {
                             String title = in.readLine();
                             String content = in.readLine();
                             String author = in.readLine();
-                            addPost(new Post(title, content, author));
+                            // 작성일시 생성
+                            LocalDateTime createdAt = LocalDateTime.now();
+                            addPost(new Post(title, content, author, createdAt));
                             break;
                         case "UPDATE":
                             int index = Integer.parseInt(in.readLine());
@@ -77,7 +82,7 @@ public class Server {
         private String getPostList() {
             StringBuilder stringBuilder = new StringBuilder();
             for (int i = 0; i < posts.size(); i++) {
-                stringBuilder.append(i+1).append(". ").append(posts.get(i)).append("\n");
+                stringBuilder.append(i + 1).append(". ").append(posts.get(i)).append("\n");
             }
             return stringBuilder.toString();
         }
@@ -116,11 +121,13 @@ public class Server {
         private String title;
         private String content;
         private String author;
+        private LocalDateTime createdAt;
 
-        public Post(String title, String content, String author) {
+        public Post(String title, String content, String author, LocalDateTime createdAt) {
             this.title = title;
             this.content = content;
             this.author = author;
+            this.createdAt = createdAt;
         }
 
         public String getTitle() {
@@ -147,9 +154,19 @@ public class Server {
             this.author = author;
         }
 
+        public LocalDateTime getCreatedAt() {
+            return createdAt;
+        }
+
+        public void setCreatedAt(LocalDateTime createdAt) {
+            this.createdAt = createdAt;
+        }
+
         @Override
         public String toString() {
-            return title + "\t" + content + "\t " + author;
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String formattedDateTime = createdAt.format(formatter);
+            return title + "\t" + content + "\t" + author + "\t" + formattedDateTime;
         }
     }
 }
