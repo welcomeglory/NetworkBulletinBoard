@@ -2,10 +2,10 @@
 Server클래스와 Client클래스로 구성. 
 소켓을 이용 Client서버 콘솔창으로 입력받은 내용을 Server서버에 저장하여 관리합니다.
 
-<p>🛠 Tools 🛠</p>
+## 개발 환경
 Eclipse
 
-<h3>📚 Stack 📚</h3>
+## 기술 스택
 Java
 
 ## 주요 기능
