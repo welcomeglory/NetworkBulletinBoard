@@ -3,10 +3,10 @@ Server클래스와 Client클래스로 구성.
 소켓을 이용 Client서버 콘솔창으로 입력받은 내용을 Server서버에 저장하여 관리합니다.
 
 <p>🛠 Tools 🛠</p>
-![js](https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
+Eclipse
 
 <h3>📚 Stack 📚</h3>
-![js](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+Java
 
 ## 주요 메서드
 ### Server 클래스(Server.java)
