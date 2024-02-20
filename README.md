@@ -2,13 +2,13 @@
 Server클래스와 Client클래스로 구성. 
 소켓을 이용 Client서버 콘솔창으로 입력받은 내용을 Server서버에 저장하여 관리합니다.
 
-#<p>🛠 Tools 🛠</p>
+<p>🛠 Tools 🛠</p>
 Eclipse
 
-#<h3>📚 Stack 📚</h3>
+<h3>📚 Stack 📚</h3>
 Java
 
-## 주요 메서드
+## 주요 기능
 ### Server 클래스(Server.java)
 1. **메인 메서드(main)**:
    - 서버 소켓을 생성하고, 클라이언트의 접속을 대기합니다.
@@ -47,6 +47,10 @@ Java
 
 ## 실행화면
 ![image](https://github.com/welcomeglory/NetworkBulletinBoard/assets/153584777/608572d1-b18e-4d19-a519-1b29a52ecab5)
+
+## 배운점 & 아쉬웠던 점
+톰캣과 같은 웹서버를 이용하지 않고 소켓기반으로만 구현하는 방법을 배웠습니다.
+추가로 gui기능을 추가하고 싶었는데 생각만큼 결과물이 나오지 않아 아쉬웠습니다. 차후 업그레이드 할 예정입니다.
 
     
 
